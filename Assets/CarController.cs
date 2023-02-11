@@ -20,21 +20,33 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform rearLeftWheelTransform, rearRightWheelTransform;
     private bool echado=false;
 
+    void Start()
+    {
+        frontLeftWheelCollider.ConfigureVehicleSubsteps(10000, 1, 1);
+        frontRightWheelCollider.ConfigureVehicleSubsteps(10000, 1, 1);
+        rearLeftWheelCollider.ConfigureVehicleSubsteps(10000, 1, 1);
+        rearRightWheelCollider.ConfigureVehicleSubsteps(10000, 1, 1);
+    }
+
     private void FixedUpdate() {
         GetInput();
-        HandleMotor();
+        
         HandleSteering();
         UpdateWheels();
+        
     }
     private void Update(){
         if (Input.GetKeyDown(KeyCode.Space)) {
-         frenoMano();
+         //frenoMano();
          echado=true;
      }
         else{
             echado=false;
         }
 
+    }
+    private void LateUpdate(){
+        HandleMotor();
     }
     private void frenoMano(){
         while (Input.GetKeyDown(KeyCode.Space))
@@ -55,14 +67,15 @@ public class CarController : MonoBehaviour
     }
 
     private void HandleMotor() {
-        frontLeftWheelCollider.motorTorque = verticalInput * motorForce;
-        frontRightWheelCollider.motorTorque = verticalInput * motorForce;
+        print(Time.deltaTime);
+        frontLeftWheelCollider.motorTorque = verticalInput * motorForce * 500 * Time.deltaTime;
+        frontRightWheelCollider.motorTorque = verticalInput * motorForce* 500 * Time.deltaTime;
         currentbreakForce = isBreaking ? breakForce : 0f;
         ApplyBreaking();
     }
 
     private void ApplyBreaking() {
-        print(currentbreakForce);
+        
         frontRightWheelCollider.brakeTorque = currentbreakForce;
         frontLeftWheelCollider.brakeTorque = currentbreakForce;
         if(!echado){
