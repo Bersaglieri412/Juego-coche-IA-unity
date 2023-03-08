@@ -1,0 +1,65 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 2499992,
+                "file_path": "results\\PruebaLargaConRayCast\\AgenteCoche\\AgenteCoche-2499992.onnx",
+                "reward": 1.8240581591870766,
+                "creation_time": 1676926889.4814868,
+                "auxillary_file_paths": [
+                    "results\\PruebaLargaConRayCast\\AgenteCoche\\AgenteCoche-2499992.pt"
+                ]
+            },
+            {
+                "steps": 2999967,
+                "file_path": "results\\PruebaLargaConRayCast\\AgenteCoche\\AgenteCoche-2999967.onnx",
+                "reward": 1.8617544356109528,
+                "creation_time": 1676927046.3394084,
+                "auxillary_file_paths": [
+                    "results\\PruebaLargaConRayCast\\AgenteCoche\\AgenteCoche-2999967.pt"
+                ]
+            },
+            {
+                "steps": 3499966,
+                "file_path": "results\\PruebaLargaConRayCast\\AgenteCoche\\AgenteCoche-3499966.onnx",
+                "reward": 1.8650679381436468,
+                "creation_time": 1676927205.486815,
+                "auxillary_file_paths": [
+                    "results\\PruebaLargaConRayCast\\AgenteCoche\\AgenteCoche-3499966.pt"
+                ]
+            },
+            {
+                "steps": 3999966,
+                "file_path": "results\\PruebaLargaConRayCast\\AgenteCoche\\AgenteCoche-3999966.onnx",
+                "reward": 1.8536421131034992,
+                "creation_time": 1676927364.6885624,
+                "auxillary_file_paths": [
+                    "results\\PruebaLargaConRayCast\\AgenteCoche\\AgenteCoche-3999966.pt"
+                ]
+            },
+            {
+                "steps": 4096020,
+                "file_path": "results\\PruebaLargaConRayCast\\AgenteCoche\\AgenteCoche-4096020.onnx",
+                "reward": null,
+                "creation_time": 1676927438.980254,
+                "auxillary_file_paths": [
+                    "results\\PruebaLargaConRayCast\\AgenteCoche\\AgenteCoche-4096020.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 4096020,
+            "file_path": "results\\PruebaLargaConRayCast\\AgenteCoche.onnx",
+            "reward": null,
+            "creation_time": 1676927438.980254,
+            "auxillary_file_paths": [
+                "results\\PruebaLargaConRayCast\\AgenteCoche\\AgenteCoche-4096020.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}

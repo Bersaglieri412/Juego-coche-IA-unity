@@ -1,0 +1,65 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 2486518,
+                "file_path": "results\\PruebaLarga2\\AgenteCoche\\AgenteCoche-2486518.onnx",
+                "reward": -20.883785025090784,
+                "creation_time": 1676506671.442683,
+                "auxillary_file_paths": [
+                    "results\\PruebaLarga2\\AgenteCoche\\AgenteCoche-2486518.pt"
+                ]
+            },
+            {
+                "steps": 2499990,
+                "file_path": "results\\PruebaLarga2\\AgenteCoche\\AgenteCoche-2499990.onnx",
+                "reward": -40.46250294148922,
+                "creation_time": 1676506719.3759613,
+                "auxillary_file_paths": [
+                    "results\\PruebaLarga2\\AgenteCoche\\AgenteCoche-2499990.pt"
+                ]
+            },
+            {
+                "steps": 2566374,
+                "file_path": "results\\PruebaLarga2\\AgenteCoche\\AgenteCoche-2566374.onnx",
+                "reward": -44.43600318700075,
+                "creation_time": 1676506919.4368443,
+                "auxillary_file_paths": [
+                    "results\\PruebaLarga2\\AgenteCoche\\AgenteCoche-2566374.pt"
+                ]
+            },
+            {
+                "steps": 2734770,
+                "file_path": "results\\PruebaLarga2\\AgenteCoche\\AgenteCoche-2734770.onnx",
+                "reward": -20.10000121828031,
+                "creation_time": 1676507201.7766454,
+                "auxillary_file_paths": [
+                    "results\\PruebaLarga2\\AgenteCoche\\AgenteCoche-2734770.pt"
+                ]
+            },
+            {
+                "steps": 2759479,
+                "file_path": "results\\PruebaLarga2\\AgenteCoche\\AgenteCoche-2759479.onnx",
+                "reward": -24.90000198994364,
+                "creation_time": 1676507425.8906283,
+                "auxillary_file_paths": [
+                    "results\\PruebaLarga2\\AgenteCoche\\AgenteCoche-2759479.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2759479,
+            "file_path": "results\\PruebaLarga2\\AgenteCoche.onnx",
+            "reward": -24.90000198994364,
+            "creation_time": 1676507425.8906283,
+            "auxillary_file_paths": [
+                "results\\PruebaLarga2\\AgenteCoche\\AgenteCoche-2759479.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}

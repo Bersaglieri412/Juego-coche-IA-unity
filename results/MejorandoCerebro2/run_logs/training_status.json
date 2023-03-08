@@ -1,0 +1,56 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 499983,
+                "file_path": "results\\MejorandoCerebro2\\AgenteCoche\\AgenteCoche-499983.onnx",
+                "reward": -0.009468449009717375,
+                "creation_time": 1676599421.3155704,
+                "auxillary_file_paths": [
+                    "results\\MejorandoCerebro2\\AgenteCoche\\AgenteCoche-499983.pt"
+                ]
+            },
+            {
+                "steps": 999981,
+                "file_path": "results\\MejorandoCerebro2\\AgenteCoche\\AgenteCoche-999981.onnx",
+                "reward": -0.025255552558011787,
+                "creation_time": 1676599616.7014806,
+                "auxillary_file_paths": [
+                    "results\\MejorandoCerebro2\\AgenteCoche\\AgenteCoche-999981.pt"
+                ]
+            },
+            {
+                "steps": 1499983,
+                "file_path": "results\\MejorandoCerebro2\\AgenteCoche\\AgenteCoche-1499983.onnx",
+                "reward": -0.04720123666431327,
+                "creation_time": 1676599812.9200952,
+                "auxillary_file_paths": [
+                    "results\\MejorandoCerebro2\\AgenteCoche\\AgenteCoche-1499983.pt"
+                ]
+            },
+            {
+                "steps": 1716496,
+                "file_path": "results\\MejorandoCerebro2\\AgenteCoche\\AgenteCoche-1716496.onnx",
+                "reward": -0.04213093861967246,
+                "creation_time": 1676599898.482082,
+                "auxillary_file_paths": [
+                    "results\\MejorandoCerebro2\\AgenteCoche\\AgenteCoche-1716496.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1716496,
+            "file_path": "results\\MejorandoCerebro2\\AgenteCoche.onnx",
+            "reward": -0.04213093861967246,
+            "creation_time": 1676599898.482082,
+            "auxillary_file_paths": [
+                "results\\MejorandoCerebro2\\AgenteCoche\\AgenteCoche-1716496.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}

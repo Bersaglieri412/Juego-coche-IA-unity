@@ -1,0 +1,65 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 499964,
+                "file_path": "results\\Prueba13\\AgenteCoche\\AgenteCoche-499964.onnx",
+                "reward": 1.90431526630786,
+                "creation_time": 1676636156.0897157,
+                "auxillary_file_paths": [
+                    "results\\Prueba13\\AgenteCoche\\AgenteCoche-499964.pt"
+                ]
+            },
+            {
+                "steps": 999954,
+                "file_path": "results\\Prueba13\\AgenteCoche\\AgenteCoche-999954.onnx",
+                "reward": 2.3064314813914466,
+                "creation_time": 1676636352.1547134,
+                "auxillary_file_paths": [
+                    "results\\Prueba13\\AgenteCoche\\AgenteCoche-999954.pt"
+                ]
+            },
+            {
+                "steps": 1499989,
+                "file_path": "results\\Prueba13\\AgenteCoche\\AgenteCoche-1499989.onnx",
+                "reward": 2.3478051504951347,
+                "creation_time": 1676636549.2285085,
+                "auxillary_file_paths": [
+                    "results\\Prueba13\\AgenteCoche\\AgenteCoche-1499989.pt"
+                ]
+            },
+            {
+                "steps": 1999962,
+                "file_path": "results\\Prueba13\\AgenteCoche\\AgenteCoche-1999962.onnx",
+                "reward": 2.3196809878281783,
+                "creation_time": 1676636741.1000538,
+                "auxillary_file_paths": [
+                    "results\\Prueba13\\AgenteCoche\\AgenteCoche-1999962.pt"
+                ]
+            },
+            {
+                "steps": 2113939,
+                "file_path": "results\\Prueba13\\AgenteCoche\\AgenteCoche-2113939.onnx",
+                "reward": 2.321075857122763,
+                "creation_time": 1676636783.8291783,
+                "auxillary_file_paths": [
+                    "results\\Prueba13\\AgenteCoche\\AgenteCoche-2113939.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2113939,
+            "file_path": "results\\Prueba13\\AgenteCoche.onnx",
+            "reward": 2.321075857122763,
+            "creation_time": 1676636783.8291783,
+            "auxillary_file_paths": [
+                "results\\Prueba13\\AgenteCoche\\AgenteCoche-2113939.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}

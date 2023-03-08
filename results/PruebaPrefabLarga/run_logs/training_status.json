@@ -1,0 +1,65 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 499936,
+                "file_path": "results\\PruebaPrefabLarga\\AgenteCoche\\AgenteCoche-499936.onnx",
+                "reward": -46.30518286902367,
+                "creation_time": 1676493594.0534115,
+                "auxillary_file_paths": [
+                    "results\\PruebaPrefabLarga\\AgenteCoche\\AgenteCoche-499936.pt"
+                ]
+            },
+            {
+                "steps": 999968,
+                "file_path": "results\\PruebaPrefabLarga\\AgenteCoche\\AgenteCoche-999968.onnx",
+                "reward": -46.159487872956745,
+                "creation_time": 1676493879.6149561,
+                "auxillary_file_paths": [
+                    "results\\PruebaPrefabLarga\\AgenteCoche\\AgenteCoche-999968.pt"
+                ]
+            },
+            {
+                "steps": 1499972,
+                "file_path": "results\\PruebaPrefabLarga\\AgenteCoche\\AgenteCoche-1499972.onnx",
+                "reward": -45.534734604087795,
+                "creation_time": 1676494162.2616594,
+                "auxillary_file_paths": [
+                    "results\\PruebaPrefabLarga\\AgenteCoche\\AgenteCoche-1499972.pt"
+                ]
+            },
+            {
+                "steps": 1999936,
+                "file_path": "results\\PruebaPrefabLarga\\AgenteCoche\\AgenteCoche-1999936.onnx",
+                "reward": -45.227032981588536,
+                "creation_time": 1676494447.3880763,
+                "auxillary_file_paths": [
+                    "results\\PruebaPrefabLarga\\AgenteCoche\\AgenteCoche-1999936.pt"
+                ]
+            },
+            {
+                "steps": 2204064,
+                "file_path": "results\\PruebaPrefabLarga\\AgenteCoche\\AgenteCoche-2204064.onnx",
+                "reward": -46.39230764915164,
+                "creation_time": 1676495287.1174352,
+                "auxillary_file_paths": [
+                    "results\\PruebaPrefabLarga\\AgenteCoche\\AgenteCoche-2204064.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2204064,
+            "file_path": "results\\PruebaPrefabLarga\\AgenteCoche.onnx",
+            "reward": -46.39230764915164,
+            "creation_time": 1676495287.1174352,
+            "auxillary_file_paths": [
+                "results\\PruebaPrefabLarga\\AgenteCoche\\AgenteCoche-2204064.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}

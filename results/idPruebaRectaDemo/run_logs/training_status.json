@@ -1,0 +1,47 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 499936,
+                "file_path": "results\\idPruebaRectaDemo\\AgenteCoche\\AgenteCoche-499936.onnx",
+                "reward": -0.2538280543004877,
+                "creation_time": 1676579580.5958683,
+                "auxillary_file_paths": [
+                    "results\\idPruebaRectaDemo\\AgenteCoche\\AgenteCoche-499936.pt"
+                ]
+            },
+            {
+                "steps": 999950,
+                "file_path": "results\\idPruebaRectaDemo\\AgenteCoche\\AgenteCoche-999950.onnx",
+                "reward": -0.2921294138837506,
+                "creation_time": 1676579977.7276905,
+                "auxillary_file_paths": [
+                    "results\\idPruebaRectaDemo\\AgenteCoche\\AgenteCoche-999950.pt"
+                ]
+            },
+            {
+                "steps": 1035502,
+                "file_path": "results\\idPruebaRectaDemo\\AgenteCoche\\AgenteCoche-1035502.onnx",
+                "reward": -0.290704590081967,
+                "creation_time": 1676580068.6035466,
+                "auxillary_file_paths": [
+                    "results\\idPruebaRectaDemo\\AgenteCoche\\AgenteCoche-1035502.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1035502,
+            "file_path": "results\\idPruebaRectaDemo\\AgenteCoche.onnx",
+            "reward": -0.290704590081967,
+            "creation_time": 1676580068.6035466,
+            "auxillary_file_paths": [
+                "results\\idPruebaRectaDemo\\AgenteCoche\\AgenteCoche-1035502.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}

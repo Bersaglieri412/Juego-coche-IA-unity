@@ -1,0 +1,65 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 79167,
+                "file_path": "results\\ppo\\AgenteCoche\\AgenteCoche-79167.onnx",
+                "reward": -2.2857142857142856,
+                "creation_time": 1676427019.340508,
+                "auxillary_file_paths": [
+                    "results\\ppo\\AgenteCoche\\AgenteCoche-79167.pt"
+                ]
+            },
+            {
+                "steps": 105567,
+                "file_path": "results\\ppo\\AgenteCoche\\AgenteCoche-105567.onnx",
+                "reward": -5.5400002002716064,
+                "creation_time": 1676427855.9526904,
+                "auxillary_file_paths": [
+                    "results\\ppo\\AgenteCoche\\AgenteCoche-105567.pt"
+                ]
+            },
+            {
+                "steps": 219647,
+                "file_path": "results\\ppo\\AgenteCoche\\AgenteCoche-219647.onnx",
+                "reward": null,
+                "creation_time": 1676428249.8351872,
+                "auxillary_file_paths": [
+                    "results\\ppo\\AgenteCoche\\AgenteCoche-219647.pt"
+                ]
+            },
+            {
+                "steps": 356575,
+                "file_path": "results\\ppo\\AgenteCoche\\AgenteCoche-356575.onnx",
+                "reward": -13.100000619888306,
+                "creation_time": 1676428737.533922,
+                "auxillary_file_paths": [
+                    "results\\ppo\\AgenteCoche\\AgenteCoche-356575.pt"
+                ]
+            },
+            {
+                "steps": 367711,
+                "file_path": "results\\ppo\\AgenteCoche\\AgenteCoche-367711.onnx",
+                "reward": null,
+                "creation_time": 1676429814.910966,
+                "auxillary_file_paths": [
+                    "results\\ppo\\AgenteCoche\\AgenteCoche-367711.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 367711,
+            "file_path": "results\\ppo\\AgenteCoche.onnx",
+            "reward": null,
+            "creation_time": 1676429814.910966,
+            "auxillary_file_paths": [
+                "results\\ppo\\AgenteCoche\\AgenteCoche-367711.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.13.1+cpu"
+    }
+}

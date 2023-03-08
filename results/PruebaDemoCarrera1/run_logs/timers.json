@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1676489978",
+        "python_version": "3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\diego\\JuegoCoche\\venv\\Scripts\\mlagents-learn config\\AgenteCoche.yaml --run-id=PruebaDemoCarrera1 --resume --time-scale 50",
+        "mlagents_version": "0.29.0",
+        "mlagents_envs_version": "0.29.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1676489982"
+    },
+    "total": 3.6094977,
+    "count": 1,
+    "self": 0.005161300000000146,
+    "children": {
+        "run_training.setup": {
+            "total": 0.07852930000000002,
+            "count": 1,
+            "self": 0.07852930000000002
+        },
+        "TrainerController.start_learning": {
+            "total": 3.5258070999999997,
+            "count": 1,
+            "self": 0.00026649999999861507,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 3.5255315000000005,
+                    "count": 1,
+                    "self": 3.5255315000000005
+                },
+                "trainer_threads": {
+                    "total": 8.000000004670937e-07,
+                    "count": 1,
+                    "self": 8.000000004670937e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 8.300000000183161e-06,
+                    "count": 1,
+                    "self": 8.300000000183161e-06
+                }
+            }
+        }
+    }
+}

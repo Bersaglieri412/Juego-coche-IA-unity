@@ -1,0 +1,65 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 3999968,
+                "file_path": "results\\CircuitoEntero\\AgenteCoche\\AgenteCoche-3999968.onnx",
+                "reward": -1.0441425739144852,
+                "creation_time": 1676583708.222531,
+                "auxillary_file_paths": [
+                    "results\\CircuitoEntero\\AgenteCoche\\AgenteCoche-3999968.pt"
+                ]
+            },
+            {
+                "steps": 4499990,
+                "file_path": "results\\CircuitoEntero\\AgenteCoche\\AgenteCoche-4499990.onnx",
+                "reward": -1.0457794049874267,
+                "creation_time": 1676584417.013331,
+                "auxillary_file_paths": [
+                    "results\\CircuitoEntero\\AgenteCoche\\AgenteCoche-4499990.pt"
+                ]
+            },
+            {
+                "steps": 4999965,
+                "file_path": "results\\CircuitoEntero\\AgenteCoche\\AgenteCoche-4999965.onnx",
+                "reward": -1.0456840812101222,
+                "creation_time": 1676584695.6187327,
+                "auxillary_file_paths": [
+                    "results\\CircuitoEntero\\AgenteCoche\\AgenteCoche-4999965.pt"
+                ]
+            },
+            {
+                "steps": 5499960,
+                "file_path": "results\\CircuitoEntero\\AgenteCoche\\AgenteCoche-5499960.onnx",
+                "reward": -1.046015739272242,
+                "creation_time": 1676584963.2797441,
+                "auxillary_file_paths": [
+                    "results\\CircuitoEntero\\AgenteCoche\\AgenteCoche-5499960.pt"
+                ]
+            },
+            {
+                "steps": 5868868,
+                "file_path": "results\\CircuitoEntero\\AgenteCoche\\AgenteCoche-5868868.onnx",
+                "reward": -1.0462924472513524,
+                "creation_time": 1676585223.8806047,
+                "auxillary_file_paths": [
+                    "results\\CircuitoEntero\\AgenteCoche\\AgenteCoche-5868868.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5868868,
+            "file_path": "results\\CircuitoEntero\\AgenteCoche.onnx",
+            "reward": -1.0462924472513524,
+            "creation_time": 1676585223.8806047,
+            "auxillary_file_paths": [
+                "results\\CircuitoEntero\\AgenteCoche\\AgenteCoche-5868868.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}

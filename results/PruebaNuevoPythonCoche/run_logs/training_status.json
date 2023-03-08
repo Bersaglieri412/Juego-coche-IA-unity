@@ -1,0 +1,65 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 2499936,
+                "file_path": "results\\PruebaNuevoPythonCoche\\AgenteCoche\\AgenteCoche-2499936.onnx",
+                "reward": 1.551604082429312,
+                "creation_time": 1678313731.4388218,
+                "auxillary_file_paths": [
+                    "results\\PruebaNuevoPythonCoche\\AgenteCoche\\AgenteCoche-2499936.pt"
+                ]
+            },
+            {
+                "steps": 2999959,
+                "file_path": "results\\PruebaNuevoPythonCoche\\AgenteCoche\\AgenteCoche-2999959.onnx",
+                "reward": 1.5892810954366412,
+                "creation_time": 1678313880.851211,
+                "auxillary_file_paths": [
+                    "results\\PruebaNuevoPythonCoche\\AgenteCoche\\AgenteCoche-2999959.pt"
+                ]
+            },
+            {
+                "steps": 3499969,
+                "file_path": "results\\PruebaNuevoPythonCoche\\AgenteCoche\\AgenteCoche-3499969.onnx",
+                "reward": 1.6101468233585057,
+                "creation_time": 1678314032.1051602,
+                "auxillary_file_paths": [
+                    "results\\PruebaNuevoPythonCoche\\AgenteCoche\\AgenteCoche-3499969.pt"
+                ]
+            },
+            {
+                "steps": 3999973,
+                "file_path": "results\\PruebaNuevoPythonCoche\\AgenteCoche\\AgenteCoche-3999973.onnx",
+                "reward": 1.6120010916162724,
+                "creation_time": 1678314183.4907436,
+                "auxillary_file_paths": [
+                    "results\\PruebaNuevoPythonCoche\\AgenteCoche\\AgenteCoche-3999973.pt"
+                ]
+            },
+            {
+                "steps": 4096108,
+                "file_path": "results\\PruebaNuevoPythonCoche\\AgenteCoche\\AgenteCoche-4096108.onnx",
+                "reward": null,
+                "creation_time": 1678314309.0472014,
+                "auxillary_file_paths": [
+                    "results\\PruebaNuevoPythonCoche\\AgenteCoche\\AgenteCoche-4096108.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 4096108,
+            "file_path": "results\\PruebaNuevoPythonCoche\\AgenteCoche.onnx",
+            "reward": null,
+            "creation_time": 1678314309.0472014,
+            "auxillary_file_paths": [
+                "results\\PruebaNuevoPythonCoche\\AgenteCoche\\AgenteCoche-4096108.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

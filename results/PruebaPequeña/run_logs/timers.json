@@ -1,0 +1,94 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1676633037",
+        "python_version": "3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\diego\\JuegoCoche\\venv\\Scripts\\mlagents-learn config/AgenteCoche.yaml --run-id=PruebaPeque\u00f1a --resume",
+        "mlagents_version": "0.29.0",
+        "mlagents_envs_version": "0.29.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1676633046"
+    },
+    "total": 9.1875617,
+    "count": 1,
+    "self": 0.0070566000000003015,
+    "children": {
+        "run_training.setup": {
+            "total": 0.1267096000000003,
+            "count": 1,
+            "self": 0.1267096000000003
+        },
+        "TrainerController.start_learning": {
+            "total": 9.0537955,
+            "count": 1,
+            "self": 0.00010449999999728732,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 8.933189500000001,
+                    "count": 1,
+                    "self": 7.7438912,
+                    "children": {
+                        "demo_to_buffer": {
+                            "total": 1.1892983000000008,
+                            "count": 2,
+                            "self": 0.0001230000000003173,
+                            "children": {
+                                "load_demonstration": {
+                                    "total": 0.026370400000001126,
+                                    "count": 2,
+                                    "self": 0.025846599999999498,
+                                    "children": {
+                                        "read_file": {
+                                            "total": 0.0005238000000016285,
+                                            "count": 2,
+                                            "self": 0.0005238000000016285
+                                        }
+                                    }
+                                },
+                                "make_demo_buffer": {
+                                    "total": 1.1628048999999994,
+                                    "count": 2,
+                                    "self": 0.16040569999997167,
+                                    "children": {
+                                        "steps_from_proto": {
+                                            "total": 1.0023992000000277,
+                                            "count": 7996,
+                                            "self": 0.4511461999999202,
+                                            "children": {
+                                                "_process_rank_one_or_two_observation": {
+                                                    "total": 0.5512530000001075,
+                                                    "count": 47976,
+                                                    "self": 0.5512530000001075
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "trainer_threads": {
+                    "total": 8.000000004670937e-07,
+                    "count": 1,
+                    "self": 8.000000004670937e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 0.1205007000000009,
+                    "count": 1,
+                    "self": 0.0067141000000017215,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.11378659999999918,
+                            "count": 1,
+                            "self": 0.11378659999999918
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 499953,
+                "file_path": "results\\CurvaPeque\u00f1a\\AgenteCoche\\AgenteCoche-499953.onnx",
+                "reward": 0.05932111859321594,
+                "creation_time": 1676936391.378959,
+                "auxillary_file_paths": [
+                    "results\\CurvaPeque\u00f1a\\AgenteCoche\\AgenteCoche-499953.pt"
+                ]
+            },
+            {
+                "steps": 950419,
+                "file_path": "results\\CurvaPeque\u00f1a\\AgenteCoche\\AgenteCoche-950419.onnx",
+                "reward": 0.07987376033991307,
+                "creation_time": 1676936549.7601428,
+                "auxillary_file_paths": [
+                    "results\\CurvaPeque\u00f1a\\AgenteCoche\\AgenteCoche-950419.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 950419,
+            "file_path": "results\\CurvaPeque\u00f1a\\AgenteCoche.onnx",
+            "reward": 0.07987376033991307,
+            "creation_time": 1676936549.7601428,
+            "auxillary_file_paths": [
+                "results\\CurvaPeque\u00f1a\\AgenteCoche\\AgenteCoche-950419.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}

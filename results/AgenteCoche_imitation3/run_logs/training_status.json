@@ -1,0 +1,47 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 186080,
+                "file_path": "results\\AgenteCoche_imitation3\\AgenteCoche\\AgenteCoche-186080.onnx",
+                "reward": -308.93071848068917,
+                "creation_time": 1676473351.4369466,
+                "auxillary_file_paths": [
+                    "results\\AgenteCoche_imitation3\\AgenteCoche\\AgenteCoche-186080.pt"
+                ]
+            },
+            {
+                "steps": 499952,
+                "file_path": "results\\AgenteCoche_imitation3\\AgenteCoche\\AgenteCoche-499952.onnx",
+                "reward": -140.85583484507947,
+                "creation_time": 1676473683.8499253,
+                "auxillary_file_paths": [
+                    "results\\AgenteCoche_imitation3\\AgenteCoche\\AgenteCoche-499952.pt"
+                ]
+            },
+            {
+                "steps": 500400,
+                "file_path": "results\\AgenteCoche_imitation3\\AgenteCoche\\AgenteCoche-500400.onnx",
+                "reward": -140.85583484507947,
+                "creation_time": 1676473683.916496,
+                "auxillary_file_paths": [
+                    "results\\AgenteCoche_imitation3\\AgenteCoche\\AgenteCoche-500400.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500400,
+            "file_path": "results\\AgenteCoche_imitation3\\AgenteCoche.onnx",
+            "reward": -140.85583484507947,
+            "creation_time": 1676473683.916496,
+            "auxillary_file_paths": [
+                "results\\AgenteCoche_imitation3\\AgenteCoche\\AgenteCoche-500400.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 2499937,
+                "file_path": "results\\MejorandoCerebro\\AgenteCoche\\AgenteCoche-2499937.onnx",
+                "reward": -0.6189609696979032,
+                "creation_time": 1676594907.9723544,
+                "auxillary_file_paths": [
+                    "results\\MejorandoCerebro\\AgenteCoche\\AgenteCoche-2499937.pt"
+                ]
+            },
+            {
+                "steps": 2999995,
+                "file_path": "results\\MejorandoCerebro\\AgenteCoche\\AgenteCoche-2999995.onnx",
+                "reward": -0.5817789099274359,
+                "creation_time": 1676595108.1848607,
+                "auxillary_file_paths": [
+                    "results\\MejorandoCerebro\\AgenteCoche\\AgenteCoche-2999995.pt"
+                ]
+            },
+            {
+                "steps": 3499952,
+                "file_path": "results\\MejorandoCerebro\\AgenteCoche\\AgenteCoche-3499952.onnx",
+                "reward": -0.589069806532166,
+                "creation_time": 1676595306.39983,
+                "auxillary_file_paths": [
+                    "results\\MejorandoCerebro\\AgenteCoche\\AgenteCoche-3499952.pt"
+                ]
+            },
+            {
+                "steps": 3999972,
+                "file_path": "results\\MejorandoCerebro\\AgenteCoche\\AgenteCoche-3999972.onnx",
+                "reward": -0.5697460361357048,
+                "creation_time": 1676595508.7637458,
+                "auxillary_file_paths": [
+                    "results\\MejorandoCerebro\\AgenteCoche\\AgenteCoche-3999972.pt"
+                ]
+            },
+            {
+                "steps": 4096043,
+                "file_path": "results\\MejorandoCerebro\\AgenteCoche\\AgenteCoche-4096043.onnx",
+                "reward": null,
+                "creation_time": 1676595913.4653685,
+                "auxillary_file_paths": [
+                    "results\\MejorandoCerebro\\AgenteCoche\\AgenteCoche-4096043.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 4096043,
+            "file_path": "results\\MejorandoCerebro\\AgenteCoche.onnx",
+            "reward": null,
+            "creation_time": 1676595913.4653685,
+            "auxillary_file_paths": [
+                "results\\MejorandoCerebro\\AgenteCoche\\AgenteCoche-4096043.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}

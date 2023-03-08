@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1676600019",
+        "python_version": "3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\diego\\JuegoCoche\\venv\\Scripts\\mlagents-learn config/AgenteCoche.yaml --run-id=MejorandoCerebro2 --resume",
+        "mlagents_version": "0.29.0",
+        "mlagents_envs_version": "0.29.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1676600031"
+    },
+    "total": 12.169908300000001,
+    "count": 1,
+    "self": 0.007690600000001879,
+    "children": {
+        "run_training.setup": {
+            "total": 0.08107710000000001,
+            "count": 1,
+            "self": 0.08107710000000001
+        },
+        "TrainerController.start_learning": {
+            "total": 12.0811406,
+            "count": 1,
+            "self": 0.0002799000000024421,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 12.080851599999999,
+                    "count": 1,
+                    "self": 12.080851599999999
+                },
+                "trainer_threads": {
+                    "total": 7.999999986907369e-07,
+                    "count": 1,
+                    "self": 7.999999986907369e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 8.299999999294982e-06,
+                    "count": 1,
+                    "self": 8.299999999294982e-06
+                }
+            }
+        }
+    }
+}

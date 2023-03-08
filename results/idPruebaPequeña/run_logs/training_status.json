@@ -1,0 +1,29 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 171188,
+                "file_path": "results\\idPruebaPeque\u00f1a\\AgenteCoche\\AgenteCoche-171188.onnx",
+                "reward": -319.97351246467537,
+                "creation_time": 1676576678.908032,
+                "auxillary_file_paths": [
+                    "results\\idPruebaPeque\u00f1a\\AgenteCoche\\AgenteCoche-171188.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 171188,
+            "file_path": "results\\idPruebaPeque\u00f1a\\AgenteCoche.onnx",
+            "reward": -319.97351246467537,
+            "creation_time": 1676576678.908032,
+            "auxillary_file_paths": [
+                "results\\idPruebaPeque\u00f1a\\AgenteCoche\\AgenteCoche-171188.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 499952,
+                "file_path": "results\\PruebaNueva2\\AgenteCoche\\AgenteCoche-499952.onnx",
+                "reward": -73.44912445398164,
+                "creation_time": 1676862138.4383028,
+                "auxillary_file_paths": [
+                    "results\\PruebaNueva2\\AgenteCoche\\AgenteCoche-499952.pt"
+                ]
+            },
+            {
+                "steps": 999983,
+                "file_path": "results\\PruebaNueva2\\AgenteCoche\\AgenteCoche-999983.onnx",
+                "reward": -75.17094300864687,
+                "creation_time": 1676862366.280981,
+                "auxillary_file_paths": [
+                    "results\\PruebaNueva2\\AgenteCoche\\AgenteCoche-999983.pt"
+                ]
+            },
+            {
+                "steps": 1322214,
+                "file_path": "results\\PruebaNueva2\\AgenteCoche\\AgenteCoche-1322214.onnx",
+                "reward": -74.82176598731739,
+                "creation_time": 1676862519.5086339,
+                "auxillary_file_paths": [
+                    "results\\PruebaNueva2\\AgenteCoche\\AgenteCoche-1322214.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1322214,
+            "file_path": "results\\PruebaNueva2\\AgenteCoche.onnx",
+            "reward": -74.82176598731739,
+            "creation_time": 1676862519.5086339,
+            "auxillary_file_paths": [
+                "results\\PruebaNueva2\\AgenteCoche\\AgenteCoche-1322214.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.1+cpu"
+    }
+}
