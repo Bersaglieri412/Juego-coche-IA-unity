@@ -18,7 +18,7 @@ public class AgenteCoche : Agent
     private float rotacionObj;
     public int nextIndex;
     private int i = 0;
-    private int maxAtras = 50;
+    private int maxAtras = 1;
     // Start is called before the first frame update
 
     private void Awake()
@@ -45,7 +45,8 @@ public class AgenteCoche : Agent
         ChecksPista.carThroughCheckEventArgs ev= (ChecksPista.carThroughCheckEventArgs)e;
         if (ev.carTransform == transform)
         {
-            AddReward((1f)*((maxTiempo-tiempoRestante)/maxTiempo+1));
+            //AddReward((1f)*((maxTiempo-tiempoRestante)/maxTiempo+1));
+            AddReward(100f / checks.CheckPoints.Count);
             tiempoRestante = maxTiempo;
         }
     }
@@ -62,9 +63,10 @@ public class AgenteCoche : Agent
         ChecksPista.carThroughCheckEventArgs ev = (ChecksPista.carThroughCheckEventArgs)e;
         if (ev.carTransform == transform)
         {
-            AddReward(2f*((maxTiempo-tiempoRestante)/maxTiempo+1));
+            //AddReward(2f*((maxTiempo-tiempoRestante)/maxTiempo+1));
+            AddReward(100f / checks.CheckPoints.Count);
             tiempoRestante = maxTiempo;
-            print(GetCumulativeReward()+" "+(0.5f * ((maxTiempo - tiempoRestante) / maxTiempo + 1)));
+            print(GetCumulativeReward()+" "+(100f / checks.CheckPoints.Count));
             EndEpisode();
         }
 
@@ -81,7 +83,10 @@ public class AgenteCoche : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        var localVel = transform.InverseTransformDirection(carController._rigidbody.velocity);
+        Vector3 checkpointForward = checks.siguienteCheck(this).transform.forward;
+        float directionDot = Vector3.Dot(transform.forward, checkpointForward);
+        sensor.AddObservation(directionDot);
+        /*var localVel = transform.InverseTransformDirection(carController._rigidbody.velocity);
         sensor.AddObservation(localVel.z);
         CheckPointSingle ch = checks.siguienteCheck(this);
         Vector3 diff = ch.transform.position-transform.position;
@@ -93,7 +98,7 @@ public class AgenteCoche : Agent
         sensor.AddObservation(checkRot.y);
         Quaternion carRot = this.carController.transform.rotation;  
         sensor.AddObservation(carRot.y);
-        rotacionObj = (carRot.y - checkRot.y);
+        rotacionObj = (carRot.y - checkRot.y);*/
         //AddReward(0.00006f - math.abs(rotacionObj)* 0.00006f);
         //print(0.00006f - math.abs(carRot.y - checkRot.y) * 0.0006f);
     }
@@ -103,8 +108,13 @@ public class AgenteCoche : Agent
         var input = actions.ContinuousActions;
         carController.getInputIa(input[1], input[0]);
         var localVel = transform.InverseTransformDirection(carController._rigidbody.velocity);
-        if (localVel.z < -0.9f && i < maxAtras) i++;
-        if ((rotacionObj < 0.1 && input[0] > 0.1) || (rotacionObj > 0.1 && input[0] < 0.1)) { }// AddReward(0.01f);
+        if (localVel.z < 0f && i < maxAtras)
+        {
+            EndEpisode();
+            AddReward(-100f);
+        }
+        if (localVel.z > 0f && i < maxAtras) AddReward(0.1f*localVel.z);
+        if ((rotacionObj < 0.1 && input[0] > 0.1) || (rotacionObj > 0.1 && input[0] < 0.1)) AddReward(0.1f);
 
         else if (i >= maxAtras)
         {

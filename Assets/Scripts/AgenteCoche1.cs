@@ -45,7 +45,8 @@ public class AgenteCoche1 : Agent
         ChecksPista.carThroughCheckEventArgs ev= (ChecksPista.carThroughCheckEventArgs)e;
         if (ev.carTransform == transform)
         {
-            AddReward((0.25f)*((maxTiempo-tiempoRestante)/maxTiempo+1));
+            //AddReward((0.25f)*((maxTiempo-tiempoRestante)/maxTiempo+1));
+            AddReward(100f/checks.CheckPoints.Count);
             tiempoRestante = maxTiempo;
         }
     }
@@ -62,9 +63,10 @@ public class AgenteCoche1 : Agent
         ChecksPista.carThroughCheckEventArgs ev = (ChecksPista.carThroughCheckEventArgs)e;
         if (ev.carTransform == transform)
         {
-            AddReward(0.5f*((maxTiempo-tiempoRestante)/maxTiempo+1));
+            //AddReward(0.5f*((maxTiempo-tiempoRestante)/maxTiempo+1));
+            AddReward(100f / checks.CheckPoints.Count);
             tiempoRestante = maxTiempo;
-            print(GetCumulativeReward()+" "+(0.5f * ((maxTiempo - tiempoRestante) / maxTiempo + 1)));
+            print(GetCumulativeReward()+" "+(100f / checks.CheckPoints.Count));
             EndEpisode();
         }
 
