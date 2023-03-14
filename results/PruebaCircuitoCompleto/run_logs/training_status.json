@@ -1,0 +1,47 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 499986,
+                "file_path": "results\\PruebaCircuitoCompleto\\AgenteCoche\\AgenteCoche-499986.onnx",
+                "reward": 14.119046585900444,
+                "creation_time": 1678834085.9896314,
+                "auxillary_file_paths": [
+                    "results\\PruebaCircuitoCompleto\\AgenteCoche\\AgenteCoche-499986.pt"
+                ]
+            },
+            {
+                "steps": 999980,
+                "file_path": "results\\PruebaCircuitoCompleto\\AgenteCoche\\AgenteCoche-999980.onnx",
+                "reward": 10.710088748356391,
+                "creation_time": 1678834380.5649536,
+                "auxillary_file_paths": [
+                    "results\\PruebaCircuitoCompleto\\AgenteCoche\\AgenteCoche-999980.pt"
+                ]
+            },
+            {
+                "steps": 1354997,
+                "file_path": "results\\PruebaCircuitoCompleto\\AgenteCoche\\AgenteCoche-1354997.onnx",
+                "reward": 17.611110627651215,
+                "creation_time": 1678834638.1333435,
+                "auxillary_file_paths": [
+                    "results\\PruebaCircuitoCompleto\\AgenteCoche\\AgenteCoche-1354997.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1354997,
+            "file_path": "results\\PruebaCircuitoCompleto\\AgenteCoche.onnx",
+            "reward": 17.611110627651215,
+            "creation_time": 1678834638.1333435,
+            "auxillary_file_paths": [
+                "results\\PruebaCircuitoCompleto\\AgenteCoche\\AgenteCoche-1354997.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

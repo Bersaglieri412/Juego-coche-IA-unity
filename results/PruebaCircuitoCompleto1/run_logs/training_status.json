@@ -1,0 +1,38 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 499960,
+                "file_path": "results\\PruebaCircuitoCompleto1\\AgenteCoche\\AgenteCoche-499960.onnx",
+                "reward": -5.45370454788208,
+                "creation_time": 1678835229.686428,
+                "auxillary_file_paths": [
+                    "results\\PruebaCircuitoCompleto1\\AgenteCoche\\AgenteCoche-499960.pt"
+                ]
+            },
+            {
+                "steps": 945739,
+                "file_path": "results\\PruebaCircuitoCompleto1\\AgenteCoche\\AgenteCoche-945739.onnx",
+                "reward": null,
+                "creation_time": 1678835580.1689556,
+                "auxillary_file_paths": [
+                    "results\\PruebaCircuitoCompleto1\\AgenteCoche\\AgenteCoche-945739.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 945739,
+            "file_path": "results\\PruebaCircuitoCompleto1\\AgenteCoche.onnx",
+            "reward": null,
+            "creation_time": 1678835580.1689556,
+            "auxillary_file_paths": [
+                "results\\PruebaCircuitoCompleto1\\AgenteCoche\\AgenteCoche-945739.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

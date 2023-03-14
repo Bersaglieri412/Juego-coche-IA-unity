@@ -2,8 +2,8 @@ behaviors:
   AgenteCoche:
     trainer_type: ppo
     hyperparameters:
-      batch_size: 2048
-      buffer_size: 2048000
+      batch_size: 256
+      buffer_size: 10240
       learning_rate: 3.0e-4
       beta: 5.0e-4
       epsilon: 0.2
@@ -17,7 +17,14 @@ behaviors:
     reward_signals:
       extrinsic:
         gamma: 0.99
-        strength: 1
+        strength: 0.2
+      gail:
+        gamma: 0.99
+        strength: 0.8
+        demo_path: DemosRecta/Recta.demo
+    behavioral_cloning:
+      strength: 0.8
+      demo_path: DemosRecta/Recta.demo
     max_steps: 10000000
     time_horizon: 64
     summary_freq: 100000

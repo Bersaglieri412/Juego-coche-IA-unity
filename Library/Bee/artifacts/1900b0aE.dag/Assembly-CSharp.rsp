@@ -376,6 +376,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/AgenteCoche.cs"
 "Assets/Scripts/AgenteCoche1.cs"
+"Assets/Scripts/AgenteCoche2.cs"
 "Assets/Scripts/AgentePrueba.cs"
 "Assets/Scripts/camaras.cs"
 "Assets/Scripts/CarController.cs"

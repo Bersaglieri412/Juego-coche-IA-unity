@@ -25,7 +25,7 @@ public class ChecksPista : MonoBehaviour
     }
 
     public void carThroughCheck(carThroughCheckEventArgs check) {
-        AgenteCoche c= check.carTransform.GetComponentInParent<AgenteCoche>(); //Temporal
+        AgenteCoche2 c= check.carTransform.GetComponentInParent<AgenteCoche2>(); //Temporal
         if (CheckPoints.IndexOf(check.check) != c.nextIndex)
         {
             OnPlayerWrongCheck?.Invoke(this, check);
@@ -47,6 +47,11 @@ public class ChecksPista : MonoBehaviour
     {
         if(c.nextIndex<CheckPoints.Count) return CheckPoints[c.nextIndex];
         else return CheckPoints[c.nextIndex-1];
+    }
+    public CheckPointSingle siguienteCheck(AgenteCoche2 c)
+    {
+        if (c.nextIndex < CheckPoints.Count) return CheckPoints[c.nextIndex];
+        else return CheckPoints[c.nextIndex - 1];
     }
     public CheckPointSingle siguienteCheck(AgenteCoche1 c)
     {

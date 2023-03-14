@@ -13,7 +13,7 @@ public class AgenteCoche : Agent
     [SerializeField] private Transform spawn;
 
     private CarController2 carController;
-    private float maxTiempo=30f;
+    private float maxTiempo=60f;
     public float tiempoRestante;
     private float rotacionObj;
     public int nextIndex;
@@ -86,6 +86,8 @@ public class AgenteCoche : Agent
         Vector3 checkpointForward = checks.siguienteCheck(this).transform.forward;
         float directionDot = Vector3.Dot(transform.forward, checkpointForward);
         sensor.AddObservation(directionDot);
+        var localVel = transform.InverseTransformDirection(carController._rigidbody.velocity);
+        sensor.AddObservation(localVel.z);
         /*var localVel = transform.InverseTransformDirection(carController._rigidbody.velocity);
         sensor.AddObservation(localVel.z);
         CheckPointSingle ch = checks.siguienteCheck(this);
@@ -106,14 +108,16 @@ public class AgenteCoche : Agent
     public override void OnActionReceived(ActionBuffers actions)
     {
         var input = actions.ContinuousActions;
-        carController.getInputIa(input[1], input[0]);
-        var localVel = transform.InverseTransformDirection(carController._rigidbody.velocity);
+        var localVel = transform.InverseTransformDirection(carController._rigidbody.velocity); 
+        if(localVel.z<=0 && input[1]<0) carController.getInputIa(math.abs(input[1]), input[0]);
+        else carController.getInputIa(input[1], input[0]);
+
         if (localVel.z < 0f && i < maxAtras)
         {
-            EndEpisode();
             AddReward(-100f);
+            EndEpisode();           
         }
-        if (localVel.z > 0f && i < maxAtras) AddReward(0.1f*localVel.z);
+        /*if (localVel.z > 0f && i < maxAtras) AddReward(0.1f*localVel.z);
         if ((rotacionObj < 0.1 && input[0] > 0.1) || (rotacionObj > 0.1 && input[0] < 0.1)) AddReward(0.1f);
 
         else if (i >= maxAtras)
@@ -123,7 +127,7 @@ public class AgenteCoche : Agent
             EndEpisode();
         }
         
-        //AddReward(-0.00006f);
+        //AddReward(-0.00006f);*/
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -143,13 +147,13 @@ public class AgenteCoche : Agent
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.TryGetComponent<Muro>(out Muro muro)) { }// AddReward(-0.001f / checks.CheckPoints.Count);
+        if (collision.gameObject.TryGetComponent<Muro>(out Muro muro)) AddReward(-15f / checks.CheckPoints.Count);
         
         
     }
 
     public void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.TryGetComponent<Muro>(out Muro muro)) { }//AddReward(-0.0001f / checks.CheckPoints.Count);
+        if (collision.gameObject.TryGetComponent<Muro>(out Muro muro)) AddReward(-10f / checks.CheckPoints.Count);
     }
 }

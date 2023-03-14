@@ -1,0 +1,38 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 499907,
+                "file_path": "results\\PruebaNuevoPythonAmRecta\\AgenteCoche\\AgenteCoche-499907.onnx",
+                "reward": 2.052561212796612,
+                "creation_time": 1678350696.6680977,
+                "auxillary_file_paths": [
+                    "results\\PruebaNuevoPythonAmRecta\\AgenteCoche\\AgenteCoche-499907.pt"
+                ]
+            },
+            {
+                "steps": 859500,
+                "file_path": "results\\PruebaNuevoPythonAmRecta\\AgenteCoche\\AgenteCoche-859500.onnx",
+                "reward": 2.1896060234709505,
+                "creation_time": 1678350858.2681222,
+                "auxillary_file_paths": [
+                    "results\\PruebaNuevoPythonAmRecta\\AgenteCoche\\AgenteCoche-859500.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 859500,
+            "file_path": "results\\PruebaNuevoPythonAmRecta\\AgenteCoche.onnx",
+            "reward": 2.1896060234709505,
+            "creation_time": 1678350858.2681222,
+            "auxillary_file_paths": [
+                "results\\PruebaNuevoPythonAmRecta\\AgenteCoche\\AgenteCoche-859500.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

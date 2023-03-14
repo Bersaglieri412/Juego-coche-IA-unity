@@ -1,0 +1,65 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 499982,
+                "file_path": "results\\PruebaAgenteRenovado\\AgenteCoche\\AgenteCoche-499982.onnx",
+                "reward": 9.913164668406049,
+                "creation_time": 1678826586.6352205,
+                "auxillary_file_paths": [
+                    "results\\PruebaAgenteRenovado\\AgenteCoche\\AgenteCoche-499982.pt"
+                ]
+            },
+            {
+                "steps": 999980,
+                "file_path": "results\\PruebaAgenteRenovado\\AgenteCoche\\AgenteCoche-999980.onnx",
+                "reward": 11.468765730852768,
+                "creation_time": 1678826739.9472187,
+                "auxillary_file_paths": [
+                    "results\\PruebaAgenteRenovado\\AgenteCoche\\AgenteCoche-999980.pt"
+                ]
+            },
+            {
+                "steps": 1499973,
+                "file_path": "results\\PruebaAgenteRenovado\\AgenteCoche\\AgenteCoche-1499973.onnx",
+                "reward": 12.206157865922133,
+                "creation_time": 1678826896.150489,
+                "auxillary_file_paths": [
+                    "results\\PruebaAgenteRenovado\\AgenteCoche\\AgenteCoche-1499973.pt"
+                ]
+            },
+            {
+                "steps": 1999950,
+                "file_path": "results\\PruebaAgenteRenovado\\AgenteCoche\\AgenteCoche-1999950.onnx",
+                "reward": 11.88347619918276,
+                "creation_time": 1678827054.1172307,
+                "auxillary_file_paths": [
+                    "results\\PruebaAgenteRenovado\\AgenteCoche\\AgenteCoche-1999950.pt"
+                ]
+            },
+            {
+                "steps": 2160996,
+                "file_path": "results\\PruebaAgenteRenovado\\AgenteCoche\\AgenteCoche-2160996.onnx",
+                "reward": 12.260416022967547,
+                "creation_time": 1678827642.1063728,
+                "auxillary_file_paths": [
+                    "results\\PruebaAgenteRenovado\\AgenteCoche\\AgenteCoche-2160996.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2160996,
+            "file_path": "results\\PruebaAgenteRenovado\\AgenteCoche.onnx",
+            "reward": 12.260416022967547,
+            "creation_time": 1678827642.1063728,
+            "auxillary_file_paths": [
+                "results\\PruebaAgenteRenovado\\AgenteCoche\\AgenteCoche-2160996.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

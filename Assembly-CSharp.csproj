@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\IAController.cs" />
     <Compile Include="Assets\Scripts\CheckPointSingle.cs" />
     <Compile Include="Assets\Scripts\inputController.cs" />
+    <Compile Include="Assets\Scripts\AgenteCoche2.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
