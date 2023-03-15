@@ -1,0 +1,65 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 4999250,
+                "file_path": "results\\EntrenamientoCircuitoCompleto\\AgenteCoche\\AgenteCoche-4999250.onnx",
+                "reward": -23.84441089630127,
+                "creation_time": 1678912659.1838233,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoCircuitoCompleto\\AgenteCoche\\AgenteCoche-4999250.pt"
+                ]
+            },
+            {
+                "steps": 5499120,
+                "file_path": "results\\EntrenamientoCircuitoCompleto\\AgenteCoche\\AgenteCoche-5499120.onnx",
+                "reward": -59.08550667762756,
+                "creation_time": 1678912929.1187215,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoCircuitoCompleto\\AgenteCoche\\AgenteCoche-5499120.pt"
+                ]
+            },
+            {
+                "steps": 5999999,
+                "file_path": "results\\EntrenamientoCircuitoCompleto\\AgenteCoche\\AgenteCoche-5999999.onnx",
+                "reward": -16.91457094464983,
+                "creation_time": 1678913204.1804967,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoCircuitoCompleto\\AgenteCoche\\AgenteCoche-5999999.pt"
+                ]
+            },
+            {
+                "steps": 6499755,
+                "file_path": "results\\EntrenamientoCircuitoCompleto\\AgenteCoche\\AgenteCoche-6499755.onnx",
+                "reward": -29.791325198279488,
+                "creation_time": 1678913474.0703278,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoCircuitoCompleto\\AgenteCoche\\AgenteCoche-6499755.pt"
+                ]
+            },
+            {
+                "steps": 6928492,
+                "file_path": "results\\EntrenamientoCircuitoCompleto\\AgenteCoche\\AgenteCoche-6928492.onnx",
+                "reward": -29.06707579748971,
+                "creation_time": 1678913770.1602433,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoCircuitoCompleto\\AgenteCoche\\AgenteCoche-6928492.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 6928492,
+            "file_path": "results\\EntrenamientoCircuitoCompleto\\AgenteCoche.onnx",
+            "reward": -29.06707579748971,
+            "creation_time": 1678913770.1602433,
+            "auxillary_file_paths": [
+                "results\\EntrenamientoCircuitoCompleto\\AgenteCoche\\AgenteCoche-6928492.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

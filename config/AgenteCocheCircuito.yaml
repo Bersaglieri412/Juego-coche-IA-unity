@@ -22,7 +22,7 @@ behaviors:
         gamma: 0.93
         strength: 0.5
         encoding_size: 64
-        demo_path: DemosCurva/Curva7.demo
+        demo_path: DemosRecta/Recta_0.demo
     max_steps: 10000000
     time_horizon: 64
     summary_freq: 100000

@@ -38,17 +38,19 @@ public class AgenteCoche2 : Agent
         this.tiempoRestante -= Time.deltaTime;
         if (this.tiempoRestante <= 0)
         {
-            AddReward(-10f);
-            EndEpisode();
+            //AddReward(-1f);
+            //EndEpisode();
         }
     }
     private void ChecksPista_OnPlayerCorrectCheck(object sender, EventArgs e) {
         ChecksPista.carThroughCheckEventArgs ev= (ChecksPista.carThroughCheckEventArgs)e;
         if (ev.carTransform == transform)
         {
+            /*
             //AddReward((0.25f)*((maxTiempo-tiempoRestante)/maxTiempo+1));
-            AddReward(100f/checks.CheckPoints.Count/(this.tiempoRestante/ this.maxTiempo));
-            
+            AddReward(100f/checks.CheckPoints.Count*(this.maxTiempo/(this.tiempoRestante + this.maxTiempo)));
+            */
+            AddReward(1f);
             tiempoRestante = maxTiempo;
         }
     }
@@ -56,7 +58,7 @@ public class AgenteCoche2 : Agent
     {
 
         ChecksPista.carThroughCheckEventArgs ev = (ChecksPista.carThroughCheckEventArgs)e;
-        if (ev.carTransform == transform) AddReward((-1f/checks.CheckPoints.Count));
+        if (ev.carTransform == transform) AddReward(-1f);//AddReward((-1f/checks.CheckPoints.Count));
         
     }
 
@@ -66,10 +68,12 @@ public class AgenteCoche2 : Agent
         if (ev.carTransform == transform)
         {
             //AddReward(0.5f*((maxTiempo-tiempoRestante)/maxTiempo+1));
+            /*
             AddReward(100f / checks.CheckPoints.Count);
             tiempoRestante = maxTiempo;
             print(GetCumulativeReward()+" "+(100f / checks.CheckPoints.Count));
-            EndEpisode();
+            EndEpisode();*/
+            print(GetCumulativeReward());
         }
 
         }
@@ -88,8 +92,9 @@ public class AgenteCoche2 : Agent
         Vector3 checkpointForward = checks.siguienteCheck(this).transform.forward;
         float directionDot = Vector3.Dot(transform.forward, checkpointForward);
         sensor.AddObservation(directionDot);
-        var localVel = transform.InverseTransformDirection(carController._rigidbody.velocity);
-        sensor.AddObservation(localVel.z);
+        //var localVel = transform.InverseTransformDirection(carController._rigidbody.velocity);
+        //sensor.AddObservation(localVel.z);
+        //sensor.AddObservation(this.tiempoRestante);
         /*
         sensor.AddObservation(ObserveRay(1.5f, .5f, 25f)); // FrontR
         sensor.AddObservation(ObserveRay(1.5f, 0f, 0f)); // Front
@@ -107,12 +112,11 @@ public class AgenteCoche2 : Agent
 
         else if (i >= maxAtras)
         {
-            AddReward(-10f);
+            //AddReward(-1f);
             i = 0;
-            EndEpisode();
+            //EndEpisode();
         }
-        
-        //AddReward(-1/60f);
+        //AddReward(-1/240f);
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -132,13 +136,16 @@ public class AgenteCoche2 : Agent
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.TryGetComponent<Muro>(out Muro muro)) AddReward(-15f / checks.CheckPoints.Count);
+        if (collision.gameObject.TryGetComponent<Muro>(out Muro muro))
+        {
+            AddReward(-0.5f);
+        }
         
         
     }
 
     public void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.TryGetComponent<Muro>(out Muro muro)) AddReward(-20f / checks.CheckPoints.Count);
+        if (collision.gameObject.TryGetComponent<Muro>(out Muro muro)) AddReward(-0.1f); //AddReward(-20f / checks.CheckPoints.Count);
     }
 }

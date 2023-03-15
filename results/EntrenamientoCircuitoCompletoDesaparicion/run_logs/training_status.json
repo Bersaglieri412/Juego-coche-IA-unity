@@ -1,0 +1,38 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 499288,
+                "file_path": "results\\EntrenamientoCircuitoCompletoDesaparicion\\AgenteCoche\\AgenteCoche-499288.onnx",
+                "reward": -90.82284851074219,
+                "creation_time": 1678910951.9985378,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoCircuitoCompletoDesaparicion\\AgenteCoche\\AgenteCoche-499288.pt"
+                ]
+            },
+            {
+                "steps": 680133,
+                "file_path": "results\\EntrenamientoCircuitoCompletoDesaparicion\\AgenteCoche\\AgenteCoche-680133.onnx",
+                "reward": -90.3200626373291,
+                "creation_time": 1678911096.5619175,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoCircuitoCompletoDesaparicion\\AgenteCoche\\AgenteCoche-680133.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 680133,
+            "file_path": "results\\EntrenamientoCircuitoCompletoDesaparicion\\AgenteCoche.onnx",
+            "reward": -90.3200626373291,
+            "creation_time": 1678911096.5619175,
+            "auxillary_file_paths": [
+                "results\\EntrenamientoCircuitoCompletoDesaparicion\\AgenteCoche\\AgenteCoche-680133.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
