@@ -62,8 +62,8 @@ public class Wheel : MonoBehaviour
         var emission = humo.emission;
         if (this.wheelCollider.GetGroundHit(out hit))
         {
-            if (hit.sidewaysSlip < -0.25) { }// emission.enabled = emission.enabled = true;
-            else if (hit.forwardSlip > 0.5) { }// emission.enabled = emission.enabled = true;
+            if (hit.sidewaysSlip < -0.25) { } // emission.enabled = emission.enabled = true;
+            else if (hit.forwardSlip > 0.5) { } // emission.enabled = emission.enabled = true;
             else emission.enabled = false;
         }
     }

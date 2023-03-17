@@ -1,0 +1,29 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 191244,
+                "file_path": "results\\EntrenamientoMuestra\\AgenteCoche\\AgenteCoche-191244.onnx",
+                "reward": null,
+                "creation_time": 1679092656.962775,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoMuestra\\AgenteCoche\\AgenteCoche-191244.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 191244,
+            "file_path": "results\\EntrenamientoMuestra\\AgenteCoche.onnx",
+            "reward": null,
+            "creation_time": 1679092656.962775,
+            "auxillary_file_paths": [
+                "results\\EntrenamientoMuestra\\AgenteCoche\\AgenteCoche-191244.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

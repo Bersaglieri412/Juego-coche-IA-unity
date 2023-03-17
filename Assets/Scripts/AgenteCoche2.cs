@@ -14,10 +14,12 @@ public class AgenteCoche2 : Agent
     [SerializeField] private Transform spawn;
 
     private CarController2 carController;
-    private float maxTiempo=5f;
+    private float tiempoCircuito;
+    private float maxTiempo=4f;
     public float tiempoRestante;
     private float rotacionObj;
     public int nextIndex;
+    private int muroi = 0;
     private int i = 0;
     private int maxAtras = 1;
     // Start is called before the first frame update
@@ -38,8 +40,8 @@ public class AgenteCoche2 : Agent
         this.tiempoRestante -= Time.deltaTime;
         if (this.tiempoRestante <= 0)
         {
-            //AddReward(-1f);
-            //EndEpisode();
+            AddReward(-50f);
+            EndEpisode();
         }
     }
     private void ChecksPista_OnPlayerCorrectCheck(object sender, EventArgs e) {
@@ -70,10 +72,15 @@ public class AgenteCoche2 : Agent
             //AddReward(0.5f*((maxTiempo-tiempoRestante)/maxTiempo+1));
             /*
             AddReward(100f / checks.CheckPoints.Count);
-            tiempoRestante = maxTiempo;
+           
             print(GetCumulativeReward()+" "+(100f / checks.CheckPoints.Count));
             EndEpisode();*/
-            print(GetCumulativeReward());
+            tiempoRestante = maxTiempo;
+            this.nextIndex = 0;
+            float tiempoTotal = Time.time - this.tiempoCircuito;
+            AddReward(2500f/tiempoTotal);
+            print(GetCumulativeReward()+ " Tiempo total: "+ tiempoTotal);
+            EndEpisode();
         }
 
         }
@@ -84,14 +91,25 @@ public class AgenteCoche2 : Agent
         transform.forward= spawn.forward;
         carController.parar();
         nextIndex= 0;
+        muroi = 0;
         tiempoRestante = maxTiempo;
+        tiempoCircuito = Time.time;
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        Vector3 checkpointForward = checks.siguienteCheck(this).transform.forward;
+        CheckPointSingle ch = checks.siguienteCheck(this);
+        Vector3 checkpointForward = ch.transform.forward;
         float directionDot = Vector3.Dot(transform.forward, checkpointForward);
         sensor.AddObservation(directionDot);
+        Quaternion checkRot = ch.GetComponent<Transform>().rotation;
+        sensor.AddObservation(checkRot.y);
+        Quaternion carRot = this.carController.transform.rotation;
+        sensor.AddObservation(carRot.y);
+        rotacionObj = (carRot.y - checkRot.y);
+        rotacionObj = (carRot.y - checkRot.y);
+        AddReward((0.5f - math.abs(rotacionObj))*0.5f);
+        //print(carRot.y + " Check " + checkRot.y + "Diff" + math.abs(rotacionObj));
         //var localVel = transform.InverseTransformDirection(carController._rigidbody.velocity);
         //sensor.AddObservation(localVel.z);
         //sensor.AddObservation(this.tiempoRestante);
@@ -116,7 +134,9 @@ public class AgenteCoche2 : Agent
             i = 0;
             //EndEpisode();
         }
-        //AddReward(-1/240f);
+        AddReward(-0.25f);
+        if (((rotacionObj < 0.1 && input[0] > 0.1) || (rotacionObj > 0.1 && input[0] < 0.1)) && localVel.z > 1) AddReward(0.1f);
+            
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -134,18 +154,44 @@ public class AgenteCoche2 : Agent
         discreteActions[0]=girar;
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
+        
         if (collision.gameObject.TryGetComponent<Muro>(out Muro muro))
         {
-            AddReward(-0.5f);
+            muroi++;
+            AddReward(-1.5f);
+            print(GetCumulativeReward());
+            print("entro");
+            if (muroi >= 15)
+            {
+                muroi = 0;
+                AddReward(-30f);
+                EndEpisode();
+
+            }
         }
-        
         
     }
 
-    public void OnCollisionStay(Collision collision)
+    public void OnTriggerExit(Collider collision)
     {
-        if (collision.gameObject.TryGetComponent<Muro>(out Muro muro)) AddReward(-0.1f); //AddReward(-20f / checks.CheckPoints.Count);
+        if (collision.gameObject.TryGetComponent<Muro>(out Muro muro)) AddReward(-1.5f);
+        
     }
+
+/*    public void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.TryGetComponent<Muro>(out Muro muro))
+        {
+            AddReward(-1f);
+            muroi++;
+            if (muroi >= 8)
+            {
+                muroi = 0;
+               // AddReward(-100f);
+                //EndEpisode();
+            }
+        }//AddReward(-20f / checks.CheckPoints.Count);
+    }*/
 }

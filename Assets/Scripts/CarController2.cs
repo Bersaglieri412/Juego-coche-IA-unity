@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class CarController2 : MonoBehaviour
@@ -28,9 +30,17 @@ public class CarController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!IA) { 
+        bool frena = false;
+        if (!IA) { 
         steer=GameManager.instance.controller.inputWheel;
         torque = GameManager.instance.controller.inputThrottle;
+        }
+        else
+        {
+            if (torque < 0) frena = true;
+
+            else frena = false;
+            
         }
 
         foreach (Wheel wheel in wheels)
@@ -42,11 +52,12 @@ public class CarController2 : MonoBehaviour
                 wheel.brake = 900f;
 
             }
-            else
+            else if (!IA)
             {
                 wheel.brake = 0f;
             }
-        }
+
+            }
     }
     public void parar()
     {

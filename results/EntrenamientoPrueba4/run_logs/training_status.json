@@ -1,0 +1,65 @@
+{
+    "AgenteCoche": {
+        "checkpoints": [
+            {
+                "steps": 2426977,
+                "file_path": "results\\EntrenamientoPrueba4\\AgenteCoche\\AgenteCoche-2426977.onnx",
+                "reward": 831.1229302088419,
+                "creation_time": 1678964176.942853,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoPrueba4\\AgenteCoche\\AgenteCoche-2426977.pt"
+                ]
+            },
+            {
+                "steps": 2499129,
+                "file_path": "results\\EntrenamientoPrueba4\\AgenteCoche\\AgenteCoche-2499129.onnx",
+                "reward": 241.45132621129355,
+                "creation_time": 1678964238.2585287,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoPrueba4\\AgenteCoche\\AgenteCoche-2499129.pt"
+                ]
+            },
+            {
+                "steps": 2499930,
+                "file_path": "results\\EntrenamientoPrueba4\\AgenteCoche\\AgenteCoche-2499930.onnx",
+                "reward": 135.1654256184896,
+                "creation_time": 1678964299.034172,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoPrueba4\\AgenteCoche\\AgenteCoche-2499930.pt"
+                ]
+            },
+            {
+                "steps": 2999007,
+                "file_path": "results\\EntrenamientoPrueba4\\AgenteCoche\\AgenteCoche-2999007.onnx",
+                "reward": 535.207265218099,
+                "creation_time": 1678964552.92155,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoPrueba4\\AgenteCoche\\AgenteCoche-2999007.pt"
+                ]
+            },
+            {
+                "steps": 3265876,
+                "file_path": "results\\EntrenamientoPrueba4\\AgenteCoche\\AgenteCoche-3265876.onnx",
+                "reward": null,
+                "creation_time": 1678964685.9609463,
+                "auxillary_file_paths": [
+                    "results\\EntrenamientoPrueba4\\AgenteCoche\\AgenteCoche-3265876.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3265876,
+            "file_path": "results\\EntrenamientoPrueba4\\AgenteCoche.onnx",
+            "reward": null,
+            "creation_time": 1678964685.9609463,
+            "auxillary_file_paths": [
+                "results\\EntrenamientoPrueba4\\AgenteCoche\\AgenteCoche-3265876.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
